@@ -1,0 +1,70 @@
+swagger: "2.0"
+info:
+  description: "KSCO API"
+  version: "0.0.1"
+  title: "Swagger KSCO Ecommerce"
+  termsOfService: "http://ksco.co/terms/"
+  contact:
+    email: "apiteam@ksco.co"
+  license:
+    name: "MIT License"
+    url: "https://opensource.org/licenses/MIT"
+host: "http://localhost:8080/api"
+
+basePath: "/v1/"
+
+schemes:
+  - "https"
+  - "http"
+paths:
+  /user:
+    get:
+      tags:
+        - "user"
+      summary: "User is logged in"
+      description: ""
+      operationId: "loggedInUser"
+      consumes:
+        - "application/json"
+        - "application/xml"
+      produces:
+        - "application/xml"
+        - "application/json"
+
+      responses:
+        "200":
+          description: "Returns true/false"
+
+  /registration:
+    post:
+      summary: "Updates a pet in the store with form data"
+      description: ""
+      operationId: "registration"
+      consumes:
+        - "application/x-www-form-urlencoded"
+      produces:
+        - "application/xml"
+        - "application/json"
+      parameters:
+        - name: "user"
+          in: "formData"
+          description: "username"
+          required: true
+          type: "string"
+
+        - name: "email"
+          in: "formData"
+          description: "email"
+          required: true
+          type: "string"
+
+        - name: "session"
+          in: "formData"
+          description: "session token"
+          required: true
+          type: "string"
+      responses:
+        "200":
+          description: "true/false"
+        "405":
+          description: "Invalid input"
