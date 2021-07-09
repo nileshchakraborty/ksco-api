@@ -7,11 +7,11 @@ KSCO API
 - Search could be by typing or by voice detection (Text to speach)
 
 ## FrontEnd
-React (Native/Web) Or Flutter (Dart) 
+- React (Native/Web) Or Flutter (Dart) 
 
 ## BackEnd
-Java (Spring Boot) - For Services 
-Python - For AI/ML for AR
+- Java (Spring Boot) - For Services 
+- Python - For AI/ML for AR
 
 ## Database
 
