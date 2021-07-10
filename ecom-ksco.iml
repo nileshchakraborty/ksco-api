@@ -13,6 +13,9 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
+    <facet type="Python" name="Python">
+      <configuration sdkName="Python 3.8 (ecom-ksco)" />
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -22,6 +25,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -120,5 +124,6 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:5.3.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.2.11.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.2.11.RELEASE" level="project" />
+    <orderEntry type="library" name="Python 3.8 (ecom-ksco) interpreter library" level="application" />
   </component>
 </module>
